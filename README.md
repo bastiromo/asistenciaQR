@@ -1,6 +1,6 @@
 # asistenciaQR
 
-######**Instalacion**
+**Instalacion**
 
 ```
 npm install
