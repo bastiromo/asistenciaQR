@@ -1,0 +1,7 @@
+# asistenciaQR
+
+###Instalacion
+
+```
+npm install
+```
