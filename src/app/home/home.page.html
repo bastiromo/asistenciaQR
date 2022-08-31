@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title class="tituloSuperior">
+    <ion-title>
       Portal
     </ion-title>
     <ion-buttons slot="start">
@@ -9,11 +9,93 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Welcome</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <ion-button id="open-modal" expand="block" color="success">Ver Asignaturas</ion-button>
 
+  <ion-modal #modal trigger="open-modal" [presentingElement]="presentingElement">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Asignaturas</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="modal.dismiss()">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item class="card">
+            <ion-avatar class="avatar" slot="start">
+              <ion-img src="https://pbs.twimg.com/profile_images/1112000043735830531/6MAAVpve_400x400.jpg"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2  class="titulo__modal">PROGRAMACION DE APPS</h2>
+              <p class="nombre__modal">Fernando Sepulveda</p>
+            </ion-label>
+          </ion-item>  <!-- CARD -->
+
+          <ion-item class="card">
+            <ion-avatar class="avatar" slot="start">
+              <ion-img src="http://pm1.narvii.com/7071/e7e3b5c35368b13a73b79ec7b0dc0c37cc16f3car1-365-370v2_uhq.jpg"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2  class="titulo__modal">ARQUITECTURA</h2>
+              <p class="nombre__modal">Ivan Bilbao</p>
+            </ion-label>
+          </ion-item> <!-- CARD -->
+
+          <ion-item class="card">
+            <ion-avatar class="avatar" slot="start">
+              <ion-img src="https://www.mobafire.com/images/champion/square/corki.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2  class="titulo__modal">CALIDAD DE SOFTWARE</h2>
+              <p class="nombre__modal">Carlos Quintanilla</p>
+            </ion-label>
+          </ion-item>  <!-- CARD -->
+
+          <ion-item class="card">
+            <ion-avatar class="avatar" slot="start">
+              <ion-img src="data:image/jpeg;base64,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"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2  class="titulo__modal">INGLÉS</h2>
+              <p class="nombre__modal">Pía Valenzuela</p>
+            </ion-label>
+          </ion-item>  <!-- CARD -->
+
+          <ion-item class="card">
+            <ion-avatar class="avatar" slot="start">
+              <ion-img src="https://ddragon.leagueoflegends.com/cdn/11.18.1/img/profileicon/746.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2  class="titulo__modal">ESTADISTICA DESCRIPTIVA</h2>
+              <p class="nombre__modal">Camila Prieto</p>
+            </ion-label>
+          </ion-item>  <!-- CARD -->
+
+          <ion-item class="card">
+            <ion-avatar class="avatar" slot="start">
+              <ion-img src="https://p4.wallpaperbetter.com/wallpaper/877/127/707/anime-girls-brunette-anime-miyaura-sanshio-wallpaper-preview.jpg"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2  class="titulo__modal">ÉTICA</h2>
+              <p class="nombre__modal">Karen Sepulveda</p>
+            </ion-label>
+          </ion-item>  <!-- CARD -->
+
+          <ion-item class="card">
+            <ion-avatar class="avatar" slot="start">
+              <ion-img src="https://pm1.narvii.com/6243/2a753194ea22f083d1912876cd821a1adc8613a6_hq.jpg"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2 class="titulo__modal">PORTAFOLIO</h2>
+              <p class="nombre__modal">Alexandra Hernandez</p>
+            </ion-label>
+          </ion-item>  <!-- CARD -->
+
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>

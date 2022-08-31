@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 // Paleta de colores
-$oscuroPrimario: #1C3879;
-$oscuroSecundario: #607EAA;
-$claroPrimario: #EAE3D2;
-$claroSecundario: #F9F5EB;
+$global_1: #00AD7C;
+$global_2: #52D681;
+$global_3: #B5FF7D;
+$global_4: #FFF8B5;
+$global_5: #30dc74;
 $blanco: #ffffff;
 $negro: #000000;
 
@@ -23,11 +24,17 @@ $negro: #000000;
     // border: 2px solid blanchedalmond;
     
 }
+// .input{
+//     display: block;
+//     border: 2px #636363 solid ;
+//     border-radius: 5px;
+//   }
+
 
 .btn {
-    background-color: $oscuroPrimario;
+    background-color: $global_5;
     display: block;
-    color: $blanco;
+    color: $negro;
     text-align: center;
     padding: 1rem 3rem;
     font-size: 1rem;
@@ -35,14 +42,13 @@ $negro: #000000;
     font-weight: 700;
     border: 20px;
     border-radius: 5px;
-    color: $claroSecundario;
 }
+
 
 .btn:hover{
     cursor: pointer;
-    background-color: $oscuroSecundario;
+    background-color: $global_2;
     transition: 0.1s ease;
-    color: $claroPrimario;
 }
 
 
@@ -54,5 +60,5 @@ $negro: #000000;
 }
 
 .recover:hover{
-    color: $claroPrimario;
+    color: $global_3;
 }
