@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+// Paleta de colores
+$oscuroPrimario: #1C3879;
+$oscuroSecundario: #607EAA;
+$claroPrimario: #EAE3D2;
+$claroSecundario: #F9F5EB;
+$blanco: #ffffff;
+$negro: #000000;
+
+
+*{
+  font-family: 'Rubik', sans-serif;
+}
+
+// .tituloSuperior{
+//   text-align: center;
+// }
+
+.container{
+    margin: 50% 10px 0 10px;
+    // background-color: white; 
+    // border: 2px solid blanchedalmond;
+    
+}
+
+.btn {
+    background-color: $oscuroPrimario;
+    display: block;
+    color: $blanco;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 20px;
+    border-radius: 5px;
+    color: $claroSecundario;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: $oscuroSecundario;
+    transition: 0.1s ease;
+    color: $claroPrimario;
+}
+
+
+.recover{
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    color: $blanco;
+}
+
+.recover:hover{
+    color: $claroPrimario;
+}

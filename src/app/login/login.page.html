@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Login</ion-title>
-    
+    <ion-title class="tituloSuperior">Login</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
@@ -13,9 +13,7 @@
  -->
 <ion-content>
 
-  <div id="container">
-
-
+  <div class="container">
     <ion-item>
       <ion-label position="floating">User</ion-label>
       <ion-input placeholder="User Here" [(ngModel)]="user"></ion-input>
@@ -24,9 +22,11 @@
       <ion-label position="floating">Password</ion-label>
       <ion-input placeholder="********" [(ngModel)]="password" type="password"></ion-input>
     </ion-item>
+    <p class="btn" (click)="login()" >Enter</p>
 
-    <ion-button expand="full" (click)="login()">Enter</ion-button>
 
   </div>
+  <p class="recover">Forgot your password?</p>
+
 
 </ion-content>
