@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoadingController, ToastController } from '@ionic/angular';
+import { AnimationController, LoadingController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -9,14 +9,16 @@ import { LoadingController, ToastController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
 
-  user: String;
-  password: String;
+  user: string;
+  password: string;
+  nombre: string;
 
 
   constructor(
     private router: Router,
     public toast: ToastController,
-    private loadingCtrl: LoadingController
+    private loadingCtrl: LoadingController,
+    private anim: AnimationController
   ) { }
 
   ngOnInit() {
@@ -33,12 +35,30 @@ export class LoginPage implements OnInit {
       
     }
     else {
-      
+
       this.presentToast("Datos incorrectos!.", 3000)
     }
 
   }
 
+  // errorInput() {
+  //   if (this.user == '' || this.user == null) {
+
+  //     this.anim.create()
+  //       .addElement(document.querySelector(".input"))
+  //       .duration(100)
+  //       .iterations(3)
+  //       .keyframes([
+  //         { offset: .5, transform: "translateX(-5px)" },
+  //         { offset: .7, transform: "translateX(5px)" },
+  //         { offset: 1, transform: "translateX(0px)" }
+
+  //       ])
+  //       .fromTo("border", "2px #636363 solid", "2px #ff0000 solid")
+
+  //       .play()
+  //   }
+  // }
 
   async presentToast(mensaje: string, tiempo: number) {
     const toast = await this.toast.create({
@@ -47,6 +67,8 @@ export class LoginPage implements OnInit {
     });
     toast.present();
   }
+
+  
 
 
   async showLoading() {

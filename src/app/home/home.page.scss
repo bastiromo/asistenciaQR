@@ -1,10 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-*{
+// Paleta de colores
+$global_1: #00AD7C;
+$global_2: #52D681;
+$global_3: #B5FF7D;
+$global_4: #FFF8B5;
+$global_5: #30dc74;
+$blanco: #ffffff;
+$negro: #000000;
+
+
+* {
   font-family: 'Rubik', sans-serif;
 }
 
-// .tituloSuperior{
-//   text-align: center;
-// }
+.tituloSuperior {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+
+// ANIMACION
+.fondo {
+  padding: 20px 10px;
+
+}
+
+.input {
+  border: 2px #636363 solid;
+  border-radius: 5px;
+}
+
+.input__button {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 50%;
+  margin: auto;
+  margin-top: 6rem;
+  display: block;
+}
+
+.card:hover,
+.titulo__modal:hover,
+.avatar:hover {
+  cursor: pointer;
+  color: $global_3 ;
+}
+
 
