@@ -56,3 +56,14 @@ $negro: #000000;
 }
 
 
+.button-container{ 
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  transition: 0.2s;
+}
+
+.button-qr{
+  background-color: #52D681;
+}
