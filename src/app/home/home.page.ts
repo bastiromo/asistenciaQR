@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimationController } from '@ionic/angular';
-
+import { ModalController } from '@ionic/angular';
 
 
 @Component({
@@ -18,7 +18,7 @@ nombre: string;
 
 
 
-  constructor(private anim: AnimationController
+  constructor(private anim: AnimationController, public modalController : ModalController
     ) {}
 
     errorInput() {
@@ -52,6 +52,10 @@ nombre: string;
         ])
         .play()
     }
+
+    closeModal(){
+      this.modalController.dismiss()
+    }
 }
 
 export class ExampleComponent {
@@ -62,3 +66,4 @@ export class ExampleComponent {
     this.presentingElement = document.querySelector('.ion-page');
   }
 }
+

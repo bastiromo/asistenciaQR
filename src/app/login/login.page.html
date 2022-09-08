@@ -14,17 +14,16 @@
 <ion-content>
 
   <div class="container">
-    <ion-item>
-      <ion-label position="floating">User</ion-label>
-      <ion-input class="input" placeholder="User Here" [(ngModel)]="user"></ion-input>
-    </ion-item>
-    <p class="separador"></p>
-    <ion-item>
-      <ion-label position="floating">Password</ion-label>
-      <ion-input class="input" placeholder="********" [(ngModel)]="password" type="password"></ion-input>
-    </ion-item>
-    <p class="btn" (click)="login()" (click)="errorInput()">Enter</p>
-
+      <ion-item>
+        <ion-label position="floating">User</ion-label>
+        <ion-input class="input" placeholder="User Here" [(ngModel)]="user"></ion-input>
+      </ion-item>
+      <p class="separador"></p>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input class="input" placeholder="********" [(ngModel)]="password" type="password"></ion-input>
+      </ion-item>
+      <p class="btn" (click)="login()" (click)="errorInput()">Enter</p>
 
   </div>
   <p class="recover">Forgot your password?</p>
