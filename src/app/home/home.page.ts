@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AnimationController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 
@@ -18,8 +19,16 @@ nombre: string;
 
 
 
-  constructor(private anim: AnimationController, public modalController : ModalController
+  constructor(
+    private anim: AnimationController,
+    public modalController : ModalController,
+    private router : Router
     ) {}
+
+
+    exit(){
+      this.router.navigate(['/login'])
+    }
 
     errorInput() {
       if (this.nombre == '' || this.nombre == null) {
@@ -42,7 +51,7 @@ nombre: string;
 
     ngOnInit(): void {
       this.anim.create()
-        .addElement(document.querySelector("img"))
+        .addElement(document.querySelector(".logo"))
         .duration(1800)
         .delay(500)
         .keyframes([

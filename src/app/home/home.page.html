@@ -1,12 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="titulo">
       Portal
     </ion-title>
-    <ion-buttons slot="start">
+    <!-- <ion-buttons slot="start">
       <ion-back-button>Atrás</ion-back-button>
-    </ion-buttons>
-    
+    </ion-buttons> -->
+    <button class="menu" mat-button [matMenuTriggerFor]="menu"><img src="/assets/menu.png" alt=""></button>
+    <mat-menu #menu="matMenu">
+    <button mat-menu-item>Mi Perfil</button>
+    <button mat-menu-item>Notificaciones</button>
+    <button mat-menu-item>Certificados</button>
+    <button mat-menu-item (click)="exit()">Cerrar Sesion</button>
+    </mat-menu>
   </ion-toolbar>
 </ion-header>
 

@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 import {MatButtonModule} from '@angular/material/button';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -20,7 +21,8 @@ import { HomePageRoutingModule } from './home-routing.module';
     HomePageRoutingModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatMenuModule
   ],
   declarations: [HomePage]
 })
