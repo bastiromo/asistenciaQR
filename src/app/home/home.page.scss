@@ -39,6 +39,7 @@ $negro: #000000;
 .img {
   display: flex;
   justify-content: center;
+  padding: 20px 0px;
 }
 
 .logo {
@@ -52,7 +53,7 @@ $negro: #000000;
 .titulo__modal:hover,
 .avatar:hover {
   cursor: pointer;
-  color: $global_3 ;
+  color: $global_5 ;
 }
 
 
@@ -84,3 +85,15 @@ $negro: #000000;
   justify-content: center;
   display: flex;
 }
+
+.darkmode{
+  display: flex;
+  justify-content: center;
+}
+
+
+// .container{
+//   width: 100%;
+//   height: 100%;
+//   background-color: #fff;
+// }

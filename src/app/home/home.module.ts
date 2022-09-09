@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 import {MatButtonModule} from '@angular/material/button';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
 
 
 import { HomePageRoutingModule } from './home-routing.module';
@@ -18,6 +20,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     HomePageRoutingModule,
     MatButtonModule,
     MatProgressSpinnerModule,
+    MatSlideToggleModule
   ],
   declarations: [HomePage]
 })

@@ -46,7 +46,7 @@ nombre: string;
         .duration(1800)
         .delay(500)
         .keyframes([
-          { offset: 1, transform: "scale(2.5)" },
+          { offset: 1, transform: "scale(2)" },
           { offset: 1, opacity: "0" },
   
         ])
