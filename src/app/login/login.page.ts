@@ -28,6 +28,10 @@ export class LoginPage implements OnInit {
 
   
 
+  recuperarClave(){
+  this.router.navigate(['/recuperar-clave'])
+  }
+
   login() {
     
 
@@ -62,6 +66,8 @@ export class LoginPage implements OnInit {
   //   }
   // }
 
+
+  // ANIMACION SPINNER
   async presentToast(mensaje: string, tiempo: number) {
     const toast = await this.toast.create({
       message: mensaje,
@@ -69,9 +75,6 @@ export class LoginPage implements OnInit {
     });
     toast.present();
   }
-
-  
-
 
   async showLoading() {
     const loading = await this.loadingCtrl.create({

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+// Paleta de colores
+$global_1: #00AD7C;
+$global_2: #52D681;
+$global_3: #B5FF7D;
+$global_4: #FFF8B5;
+$global_5: #30dc74;
+$blanco: #ffffff;
+$negro: #000000;
+
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+.tituloSuperior {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 30px auto;
+}
+
+.container-table{
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.tabla__titulo{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.tabla__item,.tabla__titulo{
+    border-bottom: 1px solid #706f6f;
+    padding: 10px 0px;
+}
+
+

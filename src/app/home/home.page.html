@@ -6,11 +6,11 @@
     <!-- <ion-buttons slot="start">
       <ion-back-button>Atrás</ion-back-button>
     </ion-buttons> -->
-    <button class="menu" mat-button [matMenuTriggerFor]="menu"><img src="/assets/menu.png" alt=""></button>
+    <button slot="end" class="menu" mat-button [matMenuTriggerFor]="menu"><img src="/assets/menu.png" alt=""></button>
     <mat-menu #menu="matMenu">
-    <button mat-menu-item>Mi Perfil</button>
-    <button mat-menu-item>Notificaciones</button>
-    <button mat-menu-item>Certificados</button>
+    <button mat-menu-item (click)="perfil()">Mi Perfil</button>
+    <button mat-menu-item (click)="historial()">Historial</button>
+    <button mat-menu-item (click)="ajustes()">Ajustes</button>
     <button mat-menu-item (click)="exit()">Cerrar Sesion</button>
     </mat-menu>
   </ion-toolbar>
@@ -87,7 +87,7 @@
             <ion-avatar class="avatar" slot="start">
               <ion-img src="/assets/avatar.png"></ion-img>
             </ion-avatar>
-            <ion-label>
+            <ion-label (click)="asignatura01()" (click)="closeModal()" >
               <h2  class="titulo__modal">PROGRAMACION DE APPS</h2>
               <p class="nombre__modal">Fernando Sepulveda</p>
             </ion-label>
@@ -97,7 +97,7 @@
             <ion-avatar class="avatar" slot="start">
               <ion-img src="/assets/avatar.png"></ion-img>
             </ion-avatar>
-            <ion-label>
+            <ion-label (click)="asignatura02()" (click)="closeModal()" >
               <h2  class="titulo__modal">ARQUITECTURA</h2>
               <p class="nombre__modal">Ivan Bilbao</p>
             </ion-label>
@@ -106,9 +106,8 @@
           <ion-item class="card">
             <ion-avatar class="avatar" slot="start">
               <ion-img src="/assets/avatar.png"></ion-img>
-
             </ion-avatar>
-            <ion-label>
+            <ion-label (click)="asignatura03()" (click)="closeModal()" >
               <h2  class="titulo__modal">CALIDAD DE SOFTWARE</h2>
               <p class="nombre__modal">Carlos Quintanilla</p>
             </ion-label>
@@ -118,9 +117,8 @@
           <ion-item class="card">
             <ion-avatar class="avatar" slot="start">
               <ion-img src="/assets/avatar.png"></ion-img>
-
             </ion-avatar>
-            <ion-label>
+            <ion-label (click)="asignatura04()" (click)="closeModal()" >
               <h2  class="titulo__modal">INGLÉS</h2>
               <p class="nombre__modal">Pía Valenzuela</p>
             </ion-label>
@@ -129,9 +127,8 @@
           <ion-item class="card">
             <ion-avatar class="avatar" slot="start">
               <ion-img src="/assets/avatar.png"></ion-img>
-
             </ion-avatar>
-            <ion-label>
+            <ion-label (click)="asignatura05()" (click)="closeModal()" >
               <h2  class="titulo__modal">ESTADISTICA DESCRIPTIVA</h2>
               <p class="nombre__modal">Camila Prieto</p>
             </ion-label>
@@ -140,9 +137,8 @@
           <ion-item class="card">
             <ion-avatar class="avatar" slot="start">
               <ion-img src="/assets/avatar.png"></ion-img>
-
             </ion-avatar>
-            <ion-label>
+            <ion-label (click)="asignatura06()" (click)="closeModal()" >
               <h2  class="titulo__modal">ÉTICA</h2>
               <p class="nombre__modal">Karen Sepulveda</p>
             </ion-label>
@@ -151,9 +147,8 @@
           <ion-item class="card">
             <ion-avatar class="avatar" slot="start">
               <ion-img src="/assets/avatar.png"></ion-img>
-
             </ion-avatar>
-            <ion-label>
+            <ion-label (click)="asignatura07()" (click)="closeModal()" >
               <h2 class="titulo__modal">PORTAFOLIO</h2>
               <p class="nombre__modal">Alexandra Hernandez</p>
             </ion-label>

@@ -25,10 +25,43 @@ nombre: string;
     private router : Router
     ) {}
 
+//  NAVEGACION
 
+    asignatura01(){
+    this.router.navigate(['/asignatura01'])
+    }
+    asignatura02(){
+    this.router.navigate(['/asignatura02'])
+    }
+    asignatura03(){
+    this.router.navigate(['/asignatura03'])
+    }
+    asignatura04(){
+    this.router.navigate(['/asignatura04'])
+    }
+    asignatura05(){
+    this.router.navigate(['/asignatura05'])
+    }
+    asignatura06(){
+    this.router.navigate(['/asignatura06'])
+    }
+    asignatura07(){
+    this.router.navigate(['/asignatura07'])
+    }
+    perfil(){
+    this.router.navigate(['/perfil'])
+    }
+    historial(){
+    this.router.navigate(['/historial'])
+    }
+    ajustes(){
+    this.router.navigate(['/ajustes'])
+    }
     exit(){
       this.router.navigate(['/login'])
     }
+
+
 
     errorInput() {
       if (this.nombre == '' || this.nombre == null) {
@@ -74,5 +107,6 @@ export class ExampleComponent {
   ngOnInit() {
     this.presentingElement = document.querySelector('.ion-page');
   }
+
 }
 
