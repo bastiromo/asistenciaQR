@@ -85,12 +85,12 @@ nombre: string;
     ngOnInit(): void {
       this.anim.create()
         .addElement(document.querySelector(".logo"))
-        .duration(1800)
-        .delay(500)
+        .duration(3000)
+        .delay(2000)
         .keyframes([
-          { offset: 1, transform: "scale(2)" },
-          { offset: 1, opacity: "0" },
-  
+
+          { offset: 1, transform: "scale(2)", opacity:"0" },
+
         ])
         .play()
     }

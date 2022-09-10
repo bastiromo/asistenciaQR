@@ -79,7 +79,7 @@ export class LoginPage implements OnInit {
   async showLoading() {
     const loading = await this.loadingCtrl.create({
       message: 'Loading...',
-      duration: 2000,
+      duration: 1500,
       spinner: 'circles',
     });
 
