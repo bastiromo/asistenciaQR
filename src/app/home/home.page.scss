@@ -26,6 +26,18 @@ $negro: #000000;
 
 }
 
+.asistencia{
+  margin: 30px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+td{
+  padding: 10px;
+}
+
 .input {
   border: 2px #636363 solid;
   border-radius: 5px;
@@ -39,7 +51,9 @@ $negro: #000000;
 .img {
   display: flex;
   justify-content: center;
-  padding: 20px 0px;
+  // padding: 20px 0px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .logo {
@@ -80,7 +94,7 @@ $negro: #000000;
   align-items: center;
 }
 
-.spinner, .mensaje{
+.spinner, .mensaje, .mensaje-scaneo{
   text-align: center;
   justify-content: center;
   display: flex;
@@ -96,4 +110,10 @@ $negro: #000000;
 }
 .menu{
   width: 25px;
+}
+
+.mensaje-scaneo{
+  text-align: center;
+  margin-top: -200px;
+  margin-bottom: 30px;
 }

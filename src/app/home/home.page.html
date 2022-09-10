@@ -18,6 +18,25 @@
 
 
 <ion-content>
+
+
+    <div class="asistencia">
+      <table>
+        <tr>
+          <th>Asistencias : </th>
+          <td><strong> 10 </strong></td>
+        </tr>
+        <tr>
+          <th>Inasistencias : </th>
+          <td><strong> 4 </strong></td>
+        </tr>
+        <tr>
+          <th>Justificado : </th>
+          <td><strong> 0 </strong></td>
+        </tr>
+      </table>
+    </div>
+
     <div class="button-container">
       <div class="example-button-container">
         <button mat-raised-button id="open-modal-qr" color="primary" class="button-qr" aria-label="Add">
@@ -32,15 +51,24 @@
         </button>
     </div>
     </div>
+
+    <!-- ANIMACION -->
+      <div class="img">
+        <img class="logo" src="/assets/duoc.png" alt="logo">
+      </div>
+
+    <!-- darkmode-->
+    <div class="darkmode">
+      <mat-slide-toggle>DARKMODE</mat-slide-toggle>
+    </div>
+
+
 </ion-content>
 
-<!-- ANIMACION -->
-<div class="img">
-  <img class="logo" src="/assets/duoc.png" alt="logo">
-</div>
 
 
-<ion-content>
+
+
   <ion-modal #modal trigger="open-modal-qr" [presentingElement]="presentingElement">
       <ng-template>
         <ion-header>
@@ -55,6 +83,9 @@
           <!-- CONTENIDO QR -->
           <div class="load-content">
             <div class="container">
+              <div class="mensaje-scaneo">
+                <p>Escanee el código que el profesor mostrará en pantalla</p>
+              </div>
             <div class="mensaje">
               <p><strong>Abriendo cámara...</strong></p>
             </div>
@@ -66,10 +97,6 @@
         </ion-content>
       </ng-template>
   </ion-modal>
-</ion-content>
-
-<ion-content class="ion-padding">
-  <!-- <ion-button id="open-modal" expand="block" color="success">Ver Asignaturas</ion-button> -->
 
   <ion-modal #modal trigger="open-modal" [presentingElement]="presentingElement">
     <ng-template>
@@ -159,9 +186,5 @@
     </ng-template>
   </ion-modal>
 
-  <div class="darkmode">
-    <mat-slide-toggle>DARKMODE</mat-slide-toggle>
-  </div>
 
-</ion-content>
 
