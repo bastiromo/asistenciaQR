@@ -1,5 +1,5 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header class="toolbar" [translucent]="true" >
+  <ion-toolbar color="primary-contrast" >
     <ion-title class="tituloSuperior">Login</ion-title>
 
   </ion-toolbar>
@@ -14,6 +14,9 @@
 <ion-content>
 
   <div class="container">
+    <div class="logo-login">
+      <img src="/assets/duoc.png" alt="">
+    </div>
       <ion-item>
         <ion-label position="floating">Usuario</ion-label>
         <ion-input class="input" placeholder="Usuario Aqui" [(ngModel)]="user"></ion-input>

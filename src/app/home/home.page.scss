@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 // Paleta de colores
-$global_1: #00AD7C;
-$global_2: #52D681;
-$global_3: #B5FF7D;
-$global_4: #FFF8B5;
-$global_5: #30dc74;
+$global_1: #042e54;
+$global_2: #efb115;
+$global_3: #cdd5dc;
+$global_4: #666666;
+$global_5: #D50032;
 $blanco: #ffffff;
 $negro: #000000;
 
@@ -14,15 +14,20 @@ $negro: #000000;
   font-family: 'Rubik', sans-serif;
 }
 
+.toolbar{
+  background-color: $global_1;
+}
+
 .tituloSuperior {
   text-align: center;
   font-size: 1.3rem;
+  color: $blanco;
 }
 
 
 // ANIMACION
 .fondo {
-  padding: 20px 10px;
+ /*  padding: 20px 10px; */
 
 }
 
@@ -67,7 +72,7 @@ td{
 .titulo__modal:hover,
 .avatar:hover {
   cursor: pointer;
-  color: $global_5 ;
+  color: $global_2 ;
 }
 
 
@@ -80,7 +85,7 @@ td{
 
 
 .button-qr, .button-asignaturas{
-  background-color: #52D681;
+  background-color: $global_2;
   width: 200px;
   border-radius: 5px;
   color: $blanco;
